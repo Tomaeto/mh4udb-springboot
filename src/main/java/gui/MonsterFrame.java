@@ -10,11 +10,15 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.mhdb.AccessTest;
+import com.mhdb.MonsterData;
+
+import gui.views.HitzoneView;
+import gui.views.ItemView;
+import gui.views.StatusView;
 
 public class MonsterFrame extends JFrame {
 	private static final long serialVersionUID = -3116449965946068711L;
-	private AccessTest data;
+	private MonsterData data;
 	private ArrayList<LinkedHashMap<String, ?>> bodyparts;
 	private ArrayList<LinkedHashMap<String, ?>> weaponspecialeffects;
 	private ArrayList<LinkedHashMap<String, ?>> itemeffects;
@@ -26,13 +30,13 @@ public class MonsterFrame extends JFrame {
 	private ImageIcon icon;
 	public MonsterFrame(int id, ImageIcon icon) {
 		this.icon = icon;
-		data = new AccessTest(id);
+		data = new MonsterData(id);
 		initViews();
 	}
 	
 	public MonsterFrame(String local_name, ImageIcon icon) {
 		this.icon = icon;
-		data = new AccessTest(local_name);
+		data = new MonsterData(local_name);
 		initViews();
 	}
 

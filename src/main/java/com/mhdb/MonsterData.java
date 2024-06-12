@@ -7,17 +7,17 @@ import org.springframework.web.client.RestTemplate;
 
 import com.mhdb.controllers.Monster;
 
-public class AccessTest {
+public class MonsterData {
 	private RestTemplate template = new RestTemplate();
 	private Monster monster;
 	private LinkedHashMap<String, ?> mondata;
 	
-	public AccessTest(int id) {
+	public MonsterData(int id) {
 		monster = template.getForObject("http://localhost:8080/api/get/monster/id/" + id, Monster.class);
 		mondata = monster.getMonster();
 	}
 	
-	public AccessTest(String name) {
+	public MonsterData(String name) {
 		monster = template.getForObject("http://localhost:8080/api/get/monster/name/" + name, Monster.class);
 		mondata = monster.getMonster();
 	}
