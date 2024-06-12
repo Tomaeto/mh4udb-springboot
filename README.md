@@ -1,7 +1,7 @@
 # mh4udb-springboot
-MH4UDB Program written in Java with Spring Boot
+MH4UDB Program written in Java with [Spring Boot](https://spring.io/projects/spring-boot)
 
-Utilizes local Spring Boot API to communicate with MongoDB database
+Utilizes local Spring Boot API to communicate with MongoDB database and display data for monsters from Monster Hunter 4 Ultimate.
 
 # To Run
 
