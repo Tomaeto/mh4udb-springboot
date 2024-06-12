@@ -6,6 +6,10 @@ import java.util.LinkedHashMap;
 import org.springframework.web.client.RestTemplate;
 
 import com.mhdb.controllers.Monster;
+//Data Accessor for getting monster data from MongoDB via Spring Boot API
+//Uses RestTemplate to query local API and return data
+//Created By Adrian Faircloth
+//6-10-24
 
 public class MonsterData {
 	private RestTemplate template = new RestTemplate();

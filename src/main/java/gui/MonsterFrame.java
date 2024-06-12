@@ -16,6 +16,10 @@ import gui.views.HitzoneView;
 import gui.views.ItemView;
 import gui.views.StatusView;
 
+//Frame that contains Monster icon and buttons for getting attribute data
+//Created By Adrian Faircloth
+//6-10-24
+
 public class MonsterFrame extends JFrame {
 	private static final long serialVersionUID = -3116449965946068711L;
 	private MonsterData data;
@@ -28,6 +32,8 @@ public class MonsterFrame extends JFrame {
 	private JPanel viewPanel = new JPanel(new BorderLayout());
 	private JPanel buttonPanel = new JPanel();
 	private ImageIcon icon;
+	
+	//Constructors for both monster ID and name
 	public MonsterFrame(int id, ImageIcon icon) {
 		this.icon = icon;
 		data = new MonsterData(id);
@@ -40,6 +46,7 @@ public class MonsterFrame extends JFrame {
 		initViews();
 	}
 
+	//Initializes views for each attribute and builds UI
 	private void initViews() {
 		bodyparts = data.getBodyParts();
 		weaponspecialeffects = data.getWeaponEffects();
@@ -49,6 +56,8 @@ public class MonsterFrame extends JFrame {
 		itemView = new ItemView(itemeffects);
 		createUI();
 	}
+	
+	//Builds UI with monster icon and buttons for each monster attribute table
 	private void createUI() {
 		JButton hitzoneButton = new JButton(data.getLocalName() + " Hitzones");
 		JButton statusButton = new JButton(data.getLocalName() + " Status Resistances");
