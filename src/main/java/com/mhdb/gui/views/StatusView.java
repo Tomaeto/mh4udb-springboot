@@ -1,4 +1,4 @@
-package gui.views;
+package com.mhdb.gui.views;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

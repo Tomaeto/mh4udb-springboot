@@ -1,4 +1,4 @@
-package gui;
+package com.mhdb.gui;
 
 import java.awt.BorderLayout;
 import java.util.ArrayList;
@@ -11,10 +11,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import com.mhdb.MonsterData;
-
-import gui.views.HitzoneView;
-import gui.views.ItemView;
-import gui.views.StatusView;
+import com.mhdb.gui.views.HitzoneView;
+import com.mhdb.gui.views.ItemView;
+import com.mhdb.gui.views.StatusView;
 
 //Frame that contains Monster icon and buttons for getting attribute data
 //Created By Adrian Faircloth

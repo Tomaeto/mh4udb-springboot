@@ -6,9 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-import gui.MainFrame;
-//Created By Adrian Faircloth
-//6-10-24
+import com.mhdb.gui.MainFrame;
 
 @SpringBootApplication
 @EnableMongoRepositories
